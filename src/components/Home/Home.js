@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import SingleSubject from '../SingleSubject/SingleSubject';
+import myImage from '../../images/profile-pic.png';
 import './Home.css'
 
 const Home = () => {
@@ -19,7 +20,21 @@ const Home = () => {
                 }
             </div>
             <div className="study-activities-container">
-                <h2>study activities </h2>
+                <div className='personal-info'>
+                    <div className='name-image'>
+                        <img src={myImage} alt="" />
+                        <h3 className='name-text'>Md. Sadiq</h3>
+                    </div>
+                    <h5>Latest Degree: BBA</h5>
+                    <p>Age: 32</p>
+                    <p>Favorite subject: <strong>Math</strong></p>
+                </div>
+
+                <hr />
+
+                <div>
+                    <h3>Add a Break</h3>
+                </div>
             </div>
         </div>
     );

@@ -8,7 +8,7 @@ const SingleSubject = ({ subject }) => {
             <h3>{subjectName}</h3>
             <img src={picture} alt="" />
             <p>Study Duration: {time}m</p>
-            <button>Select</button>
+            <button className='btn-select'>Select</button>
         </div>
     );
 };

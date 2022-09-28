@@ -1,15 +1,28 @@
 .home-container {
     display: grid;
     grid-template-columns: 4fr 1fr;
-    margin-top: 15px;
-    margin-left: 5px;
-    margin-right: 5px;
+    margin: 15px 5px;
+    background-color: cornsilk;
 }
 
 .study-selection-container {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 10px;
+}
+
+.personal-info img {
+    width: 35px;
+}
+
+.name-image {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.name-text {
+    margin-left: 5px;
 }
 
 
