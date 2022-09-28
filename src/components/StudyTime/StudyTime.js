@@ -5,18 +5,10 @@ const StudyTime = ({ studyDetails }) => {
     // console.log(studyDetails);
     let studyTime = 0;
 
-    for (const studyDetail of studyDetails) {
-        console.log(studyDetail.time);
-        studyTime = studyTime + studyDetail.time;
+    for (const singleStudyDetail of studyDetails) {
+        studyTime = studyTime + singleStudyDetail.time;
     }
-    // console.log(timeDetail);
-    // let studyTime = 0;
-    // if (timeDetail) {
-    //     studyTime = studyTime + timeDetail;
-    // }
-    // else {
-    //     studyTime = timeDetail;
-    // }
+
     return (
         <div>
             <p>Study time: {studyTime}</p>

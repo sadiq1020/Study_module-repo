@@ -1,14 +1,23 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import SingleSubject from '../SingleSubject/SingleSubject';
-import myImage from '../../images/profile-pic.png';
 import './Home.css'
 import StudyTime from '../StudyTime/StudyTime';
+import MyInfo from '../MyInfo/MyInfo';
 
 const Home = () => {
     const [subjects, setSubjects] = useState([]);
-    const [studyDetails, setStudyDetails] = useState([])
+    const [studyDetails, setStudyDetails] = useState([]);
 
-    useState(() => {
+    const [breakTime, setBreakTime] = useState([]);
+
+    const addBreaks = [10, 20, 30, 40, 50];
+
+    const handleBreakTime = (addBreak) => {
+        setBreakTime(addBreak);
+    }
+    // console.log(breakTime);
+
+    useEffect(() => {
         fetch('study.json')
             .then(res => res.json())
             .then(data => setSubjects(data))
@@ -23,13 +32,7 @@ const Home = () => {
             </div>
             <div className="study-activities-container">
                 <div className='personal-info'>
-                    <div className='name-image'>
-                        <img src={myImage} alt="" />
-                        <h3 className='name-text'>Md. Sadiq</h3>
-                    </div>
-                    <h5>Latest Degree: BBA</h5>
-                    <p>Age: 32</p>
-                    <p>Favorite subject: <strong>Math</strong></p>
+                    <MyInfo></MyInfo>
                 </div>
 
                 <hr />
@@ -37,23 +40,19 @@ const Home = () => {
                 <div>
                     <h3>Add a Break</h3>
                     <div className='break-time'>
-                        <p><strong>10</strong>s</p>
-                        <p><strong>20</strong>s</p>
-                        <p><strong>30</strong>s</p>
-                        <p><strong>40</strong>s</p>
-                        <p><strong>50</strong>s</p>
+                        {
+                            addBreaks.map(addBreak => <p onClick={() => handleBreakTime(addBreak)}><strong>{addBreak}</strong>m</p>)
+                        }
                     </div>
                 </div>
                 <div className='study-time-details'>
                     <h3>Study Details</h3>
-                    {/* {
-                        studyDetails.map(studyDetail => < StudyTime timeDetail={studyDetail.time} key={studyDetail.key} ></StudyTime>)
-                    } */}
                     <StudyTime studyDetails={studyDetails}></StudyTime>
                 </div>
 
                 <div>
                     <h3>Break Time</h3>
+                    <p>{breakTime} minutes</p>
                 </div>
             </div>
         </div >
@@ -61,5 +60,3 @@ const Home = () => {
 };
 
 export default Home;
-
-// < StudyTime timeDetail = { studyDetail.time } key = { studyDetail.key } ></StudyTime>

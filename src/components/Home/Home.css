@@ -15,22 +15,15 @@
     width: 35px;
 }
 
-.name-image {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.name-text {
-    margin-left: 5px;
-}
-
 .break-time {
     display: flex;
     align-items: center;
     justify-content: space-evenly;
 }
 
+.break-time p:hover {
+    cursor: pointer;
+}
 
 /* responsive for mobile device */
 @media screen and (max-width: 700px) {
