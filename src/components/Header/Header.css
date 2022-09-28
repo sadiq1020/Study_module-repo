@@ -1,0 +1,13 @@
+.header {
+    background-color: darkslategray;
+    color: white;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 15px;
+
+}
+
+.header img {
+    height: 50px;
+}
