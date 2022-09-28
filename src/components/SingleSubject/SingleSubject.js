@@ -5,7 +5,7 @@ const SingleSubject = ({ subject, studyDetails, setStudyDetails }) => {
     const { key, picture, time, subjectName } = subject;
 
     const handleAddToStudyDetails = () => {
-        const info = [{ time, key }];
+        const info = { time, key };
         if (studyDetails) {
             const newStudyDetails = [...studyDetails, info];
             // console.log(newStudyDetails);

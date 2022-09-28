@@ -45,14 +45,21 @@ const Home = () => {
                     </div>
                 </div>
                 <div className='study-time-details'>
-                    <h3>Study Time</h3>
-                    {
-                        studyDetails.map(studyDetail => <StudyTime timeDetail={studyDetail.time} key={studyDetail.key}></StudyTime>)
-                    }
+                    <h3>Study Details</h3>
+                    {/* {
+                        studyDetails.map(studyDetail => < StudyTime timeDetail={studyDetail.time} key={studyDetail.key} ></StudyTime>)
+                    } */}
+                    <StudyTime studyDetails={studyDetails}></StudyTime>
+                </div>
+
+                <div>
+                    <h3>Break Time</h3>
                 </div>
             </div>
-        </div>
+        </div >
     );
 };
 
 export default Home;
+
+// < StudyTime timeDetail = { studyDetail.time } key = { studyDetail.key } ></StudyTime>

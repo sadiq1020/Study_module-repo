@@ -1,15 +1,22 @@
 import React from 'react';
 import './StudyTime.css';
 
-const StudyTime = ({ timeDetail }) => {
-    console.log(timeDetail);
+const StudyTime = ({ studyDetails }) => {
+    // console.log(studyDetails);
     let studyTime = 0;
-    if (timeDetail) {
-        studyTime = studyTime + timeDetail;
+
+    for (const studyDetail of studyDetails) {
+        console.log(studyDetail.time);
+        studyTime = studyTime + studyDetail.time;
     }
-    else {
-        studyTime = timeDetail;
-    }
+    // console.log(timeDetail);
+    // let studyTime = 0;
+    // if (timeDetail) {
+    //     studyTime = studyTime + timeDetail;
+    // }
+    // else {
+    //     studyTime = timeDetail;
+    // }
     return (
         <div>
             <p>Study time: {studyTime}</p>
