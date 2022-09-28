@@ -2,43 +2,43 @@
     {
         "id": "6334750e180bd62f60d6f21d",
         "key": 1,
-        "picture": "http://placehold.it/32x32",
+        "picture": "https://img.freepik.com/premium-vector/sketch-physics_156892-594.jpg",
         "time": 35,
-        "subject": "Physics"
+        "subjectName": "Physics"
     },
     {
         "id": "6334750e7b554f920d9cea8b",
         "key": 2,
         "picture": "https://img.freepik.com/free-vector/maths-chalkboard_23-2148178220.jpg",
         "time": 50,
-        "subject": "Math"
+        "subjectName": "Math"
     },
     {
         "id": "6334750eb844b0a9f32a963e",
         "key": 3,
-        "picture": "http://placehold.it/32x32",
+        "picture": "https://img.freepik.com/free-vector/flat-design-biotechnology-concept-illustrated_23-2148893192.jpg",
         "time": 45,
-        "subject": "Biology"
+        "subjectName": "Biology"
     },
     {
         "id": "6334750e9833ce79c3af6bab",
         "key": 4,
-        "picture": "http://placehold.it/32x32",
+        "picture": "https://img.freepik.com/free-vector/kawaii-geography-stickers-collection_52683-74308.jpg",
         "time": 40,
-        "subject": "Geography"
+        "subjectName": "Geography"
     },
     {
         "id": "6334750e4fc7e57e6cffcfe8",
         "key": 5,
-        "picture": "http://placehold.it/32x32",
+        "picture": "https://img.freepik.com/premium-photo/english-lettering-blue-wooden-background_23-2148293461.jpg",
         "time": 55,
-        "subject": "English"
+        "subjectName": "English"
     },
     {
         "id": "6334750e1ce96565eaa08533",
         "key": 6,
-        "picture": "http://placehold.it/32x32",
+        "picture": "https://img.freepik.com/free-photo/artist-props-collection-table_23-2148929940.jpg",
         "time": 20,
-        "subject": "Art"
+        "subjectName": "Art"
     }
 ]

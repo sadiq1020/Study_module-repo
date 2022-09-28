@@ -1,0 +1,8 @@
+.single-subject {
+    border: 1px solid salmon;
+    border-radius: 15px;
+}
+
+.single-subject img {
+    width: 250px;
+}
