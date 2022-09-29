@@ -20,7 +20,7 @@ const Qa = () => {
             <br />
 
             <h4>Where useEffect can be used other than loading data?</h4>
-            <p>The useEffect Hook allows us to perform side effects in the components.
+            <p>The <strong>useEffect</strong> Hook allows us to perform side effects in the components.
                 Other than fetching or loading data it also can directly update the DOM and set up subscriptions or timers.</p>
         </div>
     );

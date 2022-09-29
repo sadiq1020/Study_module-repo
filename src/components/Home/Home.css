@@ -27,7 +27,27 @@
     justify-content: space-evenly;
 }
 
-.break-time button:hover {
+.btn-time-break {
+    padding: 3px 5px;
+    border: 1px solid;
+    border-radius: 3px;
+}
+
+.btn-time-break:hover {
+    background-color: #328e8e;
+    color: white;
+    cursor: pointer;
+}
+
+.btn-activity-completed {
+    padding: 10px 50px;
+    border: 1px solid;
+    border-radius: 5px;
+}
+
+.btn-activity-completed:hover {
+    background-color: #328e8e;
+    color: white;
     cursor: pointer;
 }
 
