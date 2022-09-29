@@ -24,7 +24,8 @@ const Home = () => {
         const storedBreakTime = localStorage.getItem('Break-time');
         if (storedBreakTime) {
             localStoragebreakTime = JSON.parse(storedBreakTime);
-            console.log(localStoragebreakTime);
+            // console.log(localStoragebreakTime);
+            setBreakTime(localStoragebreakTime);
         }
     }, [])
 
