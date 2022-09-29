@@ -10,6 +10,13 @@
     gap: 10px;
 }
 
+.study-activities-container {
+    border: 1px solid salmon;
+    border-radius: 15px;
+    margin-left: 10px;
+    margin-right: 5px;
+}
+
 .personal-info img {
     width: 35px;
 }
@@ -34,5 +41,9 @@
     .study-selection-container {
         display: grid;
         grid-template-columns: repeat(1, 1fr);
+    }
+
+    .study-activities-container {
+        margin-top: 10px;
     }
 }

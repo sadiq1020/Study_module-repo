@@ -4,7 +4,7 @@ import './Qa.css';
 const Qa = () => {
     return (
         <div className='qa-container'>
-            <h2> Question-Answer</h2>
+            <h2> Question-Answers</h2>
             <h4>How does react work?</h4>
             <p><strong>React</strong> creates a virtual DOM, while works. whenever any change needs to be updated, react finds that specific area in the virtual DOM and compare it with the browser DOM and then update the browser DOM without affecting other things. React elements are plain objects and are cheap to create.
                 <br />
