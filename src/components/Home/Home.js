@@ -14,8 +14,19 @@ const Home = () => {
 
     const handleBreakTime = (addBreak) => {
         setBreakTime(addBreak);
+
+        localStorage.setItem('Break-time', addBreak)
     }
-    // console.log(breakTime);
+
+    // get break time from local storage
+    useEffect(() => {
+        let localStoragebreakTime = {};
+        const storedBreakTime = localStorage.getItem('Break-time');
+        if (storedBreakTime) {
+            localStoragebreakTime = JSON.parse(storedBreakTime);
+            console.log(localStoragebreakTime);
+        }
+    }, [])
 
     useEffect(() => {
         fetch('study.json')
