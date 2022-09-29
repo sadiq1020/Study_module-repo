@@ -19,8 +19,8 @@ const SingleSubject = ({ subject, studyDetails, setStudyDetails }) => {
 
     return (
         <div className='single-subject'>
-            <h3>{subjectName}</h3>
             <img src={picture} alt="" />
+            <h3>{subjectName}</h3>
             <p>Study Duration: {time}m</p>
             <button onClick={handleAddToStudyDetails} className='btn-select'>Select</button>
         </div>

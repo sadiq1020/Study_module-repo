@@ -2,7 +2,6 @@
     display: grid;
     grid-template-columns: 4fr 1fr;
     margin: 15px 5px;
-    background-color: cornsilk;
 }
 
 .study-selection-container {
@@ -21,7 +20,7 @@
     justify-content: space-evenly;
 }
 
-.break-time p:hover {
+.break-time button:hover {
     cursor: pointer;
 }
 

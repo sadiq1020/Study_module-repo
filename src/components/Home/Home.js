@@ -18,7 +18,7 @@ const Home = () => {
         localStorage.setItem('Break-time', addBreak)
     }
 
-    // get break time from local storage
+    // get break time from local storage and set to ui
     useEffect(() => {
         let localStoragebreakTime = {};
         const storedBreakTime = localStorage.getItem('Break-time');
@@ -36,38 +36,41 @@ const Home = () => {
     }, [])
 
     return (
-        <div className='home-container'>
-            <div className="study-selection-container">
-                {
-                    subjects.map(subject => <SingleSubject subject={subject} key={subject.key} studyDetails={studyDetails} setStudyDetails={setStudyDetails}></SingleSubject>)
-                }
-            </div>
-            <div className="study-activities-container">
-                <div className='personal-info'>
-                    <MyInfo></MyInfo>
+        <div>
+            <h2>Select your subject</h2>
+            <div className='home-container'>
+                <div className="study-selection-container">
+                    {
+                        subjects.map(subject => <SingleSubject subject={subject} key={subject.key} studyDetails={studyDetails} setStudyDetails={setStudyDetails}></SingleSubject>)
+                    }
                 </div>
+                <div className="study-activities-container">
+                    <div className='personal-info'>
+                        <MyInfo></MyInfo>
+                    </div>
 
-                <hr />
+                    <hr />
 
-                <div>
-                    <h3>Add a Break</h3>
-                    <div className='break-time'>
-                        {
-                            addBreaks.map(addBreak => <p onClick={() => handleBreakTime(addBreak)}><strong>{addBreak}</strong>m</p>)
-                        }
+                    <div>
+                        <h3>Add a Break</h3>
+                        <div className='break-time'>
+                            {
+                                addBreaks.map((addBreak, index) => <button key={index} onClick={() => handleBreakTime(addBreak)}>{addBreak}m</button>)
+                            }
+                        </div>
+                    </div>
+                    <div>
+                        <h3>Study Details</h3>
+                        <StudyTime studyDetails={studyDetails}></StudyTime>
+                    </div>
+
+                    <div>
+                        <h3>Break Time</h3>
+                        <p>{breakTime} minutes</p>
                     </div>
                 </div>
-                <div className='study-time-details'>
-                    <h3>Study Details</h3>
-                    <StudyTime studyDetails={studyDetails}></StudyTime>
-                </div>
-
-                <div>
-                    <h3>Break Time</h3>
-                    <p>{breakTime} minutes</p>
-                </div>
             </div>
-        </div >
+        </div>
     );
 };
 

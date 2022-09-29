@@ -1,11 +1,14 @@
 .single-subject {
     border: 1px solid salmon;
     border-radius: 15px;
-    height: 400px;
+    height: 380px;
 }
 
 .single-subject img {
-    width: 250px;
+    margin-top: 10px;
+    width: 300px;
+    height: 200px;
+    border-radius: 15px;
 }
 
 .btn-select {
