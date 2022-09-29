@@ -16,7 +16,6 @@ const Home = () => {
 
     const handleBreakTime = (addBreak) => {
         setBreakTime(addBreak);
-
         localStorage.setItem('Break-time', addBreak)
     }
 

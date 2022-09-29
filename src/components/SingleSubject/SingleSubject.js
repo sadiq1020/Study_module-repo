@@ -8,14 +8,12 @@ const SingleSubject = ({ subject, studyDetails, setStudyDetails }) => {
         const info = { time, key };
         if (studyDetails) {
             const newStudyDetails = [...studyDetails, info];
-            // console.log(newStudyDetails);
             setStudyDetails(newStudyDetails);
         }
         else {
             setStudyDetails(info);
         }
     };
-
 
     return (
         <div className='single-subject'>
